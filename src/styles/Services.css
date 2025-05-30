@@ -1,0 +1,58 @@
+.services {
+  padding: 4rem 1.5rem;
+  text-align: center;
+  background: url('/public/financial-docs.jpg') center/cover no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+}
+
+.services::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.service-card {
+  background-color: white;
+  color: #003f1a;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+.service-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.service-card p {
+  font-size: 1rem;
+}

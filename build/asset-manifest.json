@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.094ba059.css",
+    "main.js": "/static/js/main.0933fd59.js",
+    "static/media/financial-docs.jpg": "/static/media/financial-docs.7c578a004884ea22ad4c.jpg",
+    "static/media/business-meeting.jpg": "/static/media/business-meeting.864b54929e5cf9baf557.jpg",
+    "index.html": "/index.html",
+    "main.094ba059.css.map": "/static/css/main.094ba059.css.map",
+    "main.0933fd59.js.map": "/static/js/main.0933fd59.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.094ba059.css",
+    "static/js/main.0933fd59.js"
+  ]
+}

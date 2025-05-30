@@ -1,0 +1,22 @@
+.our-process {
+  background: white;
+  text-align: center;
+  padding: 4rem 1.5rem;
+}
+
+.our-process h2 {
+  color: #005A2C;
+}
+
+.steps {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 2rem auto 0;
+  text-align: left;
+}
+
+.steps li {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}

@@ -1,0 +1,21 @@
+.why-choose-us {
+  background: #f5f5f5;
+  text-align: center;
+  padding: 4rem 1.5rem;
+}
+
+.reasons-grid {
+  display: grid;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 2rem auto 0;
+}
+
+.reason h3 {
+  color: #005A2C;
+  margin-bottom: 0.5rem;
+}
+
+.reason p {
+  line-height: 1.6;
+}

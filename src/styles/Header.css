@@ -1,0 +1,76 @@
+/* Global Header Styles */
+.site-header {
+  position: sticky;
+  top: 0;
+  background-color: #005A2C;
+  z-index: 1000;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+/* Nav links */
+nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #F5A623;
+}
+
+/* Mobile Menu Icon */
+.menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #005A2C;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav.open {
+    display: flex;
+  }
+
+  nav a {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+
