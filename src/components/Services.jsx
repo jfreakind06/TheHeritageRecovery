@@ -9,16 +9,16 @@ function Services() {
       <div className="services-grid">
         {[
           {
-            title: 'Unclaimed Asset Recovery',
-            desc: 'We locate and reclaim lost or overlooked funds for individuals and families.'
+            title: 'Foreclosure Funds Recovery',
+            desc: ' Navigating foreclosure is challenging, but there’s hope for financial recovery. At The Heritage Recovery, we recognize the emotional strain it brings. Allow us to assist you in reclaiming any surplus funds following a foreclosure.'
           },
           {
-            title: 'Estate & Probate Assistance',
-            desc: 'Support for families navigating financial transitions after a loved one’s passing.'
+            title: 'Tax Sale Funds Recovery',
+            desc: ' Counties often don’t make extra efforts to find homeowners entitled to surplus funds, which may be retained if unclaimed. Don’t lose what’s yours. Contact The Heritage Recovery today, and we’ll ensure you receive the funds you’re rightfully owed.'
           },
           {
-            title: 'Wealth Research & Claims',
-            desc: 'Detailed investigation into hidden or forgotten entitlements and inheritance.'
+            title: 'Bankruptcy Funds Recovery',
+            desc: ' Bankruptcy can be a challenging ordeal, but opportunities to recover funds may still exist. Our compassionate team at The Heritage Recovery is here to guide you through this tough time. We’ll diligently work to identify and secure any available funds, offering you relief and support every step of the way.'
           }
         ].map((service, i) => (
           <motion.div
