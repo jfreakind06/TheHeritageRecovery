@@ -11,8 +11,8 @@ function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <h1>Empowering Generations to Reclaim Their Legacy</h1>
-        <p>We help families and businesses recover, protect, and grow unclaimed assets and wealth.</p>
+        <h1>Welcome to The Heritage Recovery</h1>
+        <p>We’re dedicated to helping you recover unclaimed money from foreclosures, tax sales, or bankruptcy proceedings. Our expert team provides clear guidance and personalized support to make claiming your surplus funds simple and stress-free.</p>
         <a href="#contact" className="cta-button">Schedule a Free Consultation</a>
       </motion.div>
     </section>
