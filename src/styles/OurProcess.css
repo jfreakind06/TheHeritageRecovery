@@ -1,22 +1,92 @@
 .our-process {
-  background: white;
-  text-align: center;
   padding: 4rem 1.5rem;
+  background: #f7f8fa;
+  text-align: center;
 }
 
 .our-process h2 {
-  color: #005A2C;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: #1f2937;
 }
 
-.steps {
-  list-style: none;
-  padding: 0;
-  max-width: 800px;
-  margin: 2rem auto 0;
+/* Shared step card styles */
+.step {
+  position: relative;
+  background: #fff;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 2rem 1.5rem 1.5rem;
   text-align: left;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  overflow: visible;
 }
 
-.steps li {
-  margin-bottom: 1.5rem;
-  font-size: 1.1rem;
+.step-icon {
+  position: absolute;
+  top: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border: 2px solid #68d391;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.step-icon img {
+  width: 32px;
+  height: 32px;
+}
+
+.step h3 {
+  margin-top: 2rem;
+  font-size: 1.125rem;
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+}
+.step p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #4b5563;
+}
+
+/* Top row: 3 columns */
+.process-row.top {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+/* Bottom row: 2 wider columns */
+.process-row.bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  max-width: 840px; /* 2 × 360px cards + gap */
+  margin: 3rem auto 0;
+  padding-bottom: 1rem;
+}
+
+/* Responsive: collapse to single column */
+@media (max-width: 768px) {
+  .process-row.top,
+  .process-row.bottom {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .process-row.bottom {
+    margin-top: 2rem;
+  }
+  .step {
+    text-align: center;
+  }
+  .step h3 {
+    margin-top: 3rem;
+  }
 }

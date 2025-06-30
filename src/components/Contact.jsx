@@ -14,14 +14,23 @@ function Contact() {
       >
         <h2>Schedule a Free Consultation</h2>
         <p className="contact-intro">Complete the form below and a member of our team will reach out to you shortly.</p>
-        <form className="contact-form" name="contact" method="POST" data-netlify="true">
-          <input type="hidden" name="form-name" value="contact" />
-          <input type="text" name="name" placeholder="Full Name" required />
-          <input type="email" name="email" placeholder="Email Address" required />
-          <input type="tel" name="phone" placeholder="Phone Number" />
-          <textarea name="message" rows="5" placeholder="How can we help you?" required></textarea>
-          <button type="submit">Submit</button>
-        </form>
+          <form
+          className='contact-form'
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            action="/thank-you"    
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="bot-field" />
+            <input type="email" name="_replyto" placeholder="Your Email" required />
+            <input type="text"  name="name"    placeholder="Full Name"  required />
+            <input type="tel" name="phone" placeholder="Phone Number" required/>
+            <textarea name="message" rows="5" placeholder="How can we help you?" required></textarea>
+            <button type="submit">Submit</button>
+          </form>
+
       </motion.div>
     </section>
   );
